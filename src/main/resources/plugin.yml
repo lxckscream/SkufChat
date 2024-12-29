@@ -1,0 +1,4 @@
+name: SkufChat
+version: '${project.version}'
+main: ru.screamoov.skufchat.Chat
+api-version: '1.16'
