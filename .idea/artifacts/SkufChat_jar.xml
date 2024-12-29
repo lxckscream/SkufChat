@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SkufChat:jar">
+    <output-path>$USER_HOME$/Desktop/test</output-path>
+    <root id="archive" name="SkufChat.jar">
+      <element id="module-output" name="SkufChat" />
+      <element id="library" level="project" name="SkufAPI" />
+    </root>
+  </artifact>
+</component>
