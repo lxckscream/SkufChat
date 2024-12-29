@@ -39,7 +39,7 @@ public final class Chat extends JavaPlugin implements ISkufPlugin {
         saveDefaultConfig();
 
         for (String ln : getConfig().getConfigurationSection("channels").getKeys(false)) {
-            channelsManager.channels.add(
+            channelsManager.registerChannel(
                     new Channel(
                         getConfig().getString("channels." + ln + ".symbol"),
                         getConfig().getString("channels." + ln + ".name"),
