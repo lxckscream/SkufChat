@@ -1,0 +1,4 @@
+name: SkufChat
+version: '1.0-SNAPSHOT'
+main: ru.screamoov.skufchat.Chat
+api-version: '1.16'
