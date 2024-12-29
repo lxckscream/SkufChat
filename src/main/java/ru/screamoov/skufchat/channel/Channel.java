@@ -2,6 +2,8 @@ package ru.screamoov.skufchat.channel;
 
 import org.bukkit.entity.Player;
 
+import static ru.screamoov.skufapi.colorize.Hex.color;
+
 public class Channel {
     public String symbol;
     public String name;
@@ -14,8 +16,8 @@ public class Channel {
     }
 
     public String format(Player player, String message) {
-        return stringToFormat
+        return color(stringToFormat
                 .replaceAll("%player%", player.getName())
-                .replaceAll("%message%", message);
+                .replaceAll("%message%", message));
     }
 }
