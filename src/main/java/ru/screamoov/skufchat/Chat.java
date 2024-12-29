@@ -1,5 +1,6 @@
 package ru.screamoov.skufchat;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import ru.screamoov.skufapi.ISkufPlugin;
@@ -28,7 +29,7 @@ public final class Chat extends JavaPlugin implements ISkufPlugin {
 
     @Override
     public void disable() {
-
+        Bukkit.getPluginManager().disablePlugin(this);
     }
 
     @Override
